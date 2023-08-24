@@ -5,11 +5,7 @@ import TodosList from "./TodosList";
 import { v4 as uuidv4 } from "uuid";
 
 function Main({ handleThemeSwitch, isDarkTheme }) {
-  const [todos, setTodos] = useState([
-    { text: "Item 1", completed: false, id: uuidv4() },
-    { text: "Item 2", completed: false, id: uuidv4() },
-    { text: "Item 3", completed: false, id: uuidv4() },
-  ]);
+  const [todos, setTodos] = useState([]);
   const [filteredTodos, setFilteredTodos] = useState([]);
   const [activeTodosCounter, setActiveTodosCounter] = useState(0);
   const [filter, setFilter] = useState("All");
